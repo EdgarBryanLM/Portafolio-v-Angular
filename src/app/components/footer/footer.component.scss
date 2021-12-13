@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+
+*{
+    font-family: 'Orelega One', cursive;
+}
+.body{
+    background-color: #00b4d8;
+}
+.menu{
+background-color: #00b4d8;
+}
+.menu4{
+
+    border-radius: 20px;
+    margin-bottom: 3%;
+
+}
+.navbar{
+    background-color: #00b4d8;
+}
+.menu5{
+background-color: #00b4d8;
+    margin-top: 5%;
+    border-radius: 20px;
+}
+
+.nar{
+    background-color: #00296b;
+    color: white;
+    text-decoration-color: white;
+}
+.menu-estilos{
+
+}
+
+.alinear{
+  margin-left: 20%;
+
+}
+.TEXTO{
+    margin-top: 10%;
+    margin-left: 10%;
+}
+.estilos-boton{
+    margin-top: 5%;
+}
+
+.tblanco{
+    color: white;
+}
+.cartas{
+    height: 600px
+}
+.men2{
+background-color: #003049;
+border-radius: 20px;
+padding-left: 60px
+}
+
+.espacio{
+    margin-left: 10%
+}
+
+.men3{
+background-color: #FFF;
+ border-top-left-radius: 60px;
+}
+
+.Menu-escuela{
+    background-color: #003049;
+}
+
+.skills{
+
+margin-top: 25px;
+}
+.color1{
+   color: #003049;
+}
+.color2{
+   color: #00b4d8;
+}
+.skillsc{
+    color: white;
+    text-align: center
+}
+
+.skills-t{
+
+margin-top: 4%;
+    margin-left: 3%;
+    color: #01497c;
+
+}
+
+
+.educacion{
+    color: white;
+    text-align: center;
+}
+
+.skills-c{
+    color: #012a4a;
+    ;
+}
+
+
+
+
+.contacto{
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+}
+fondo-c{
+
+}
+.center-t{
+    text-align: center;
+    color: white;
+}
+.letras{
+    color: white;
+}
+.btn-form{
+    margin-top: 5%;
+
+}
+
+.redes{
+    margin-left: 41%;
+      margin-right: 41%;
+}
+.ct{
+    color: white;
+}
+
+boton:hover{
+    color: red;
+}
+
+.footer-c{
+    color: white;
+    background-color: #012a4a;
+
+}
+
+.colo-tec{
+    color: #90be6d;
+}
+
+.tamano{
+    height:400px;
+}
+.grupo{
+    margin-bottom: 5%;
+}
+.lateral{
+    margin-top: 10%;
+}
+@media(max-width:500px){
+
+    .tamano{
+        height:200px;
+    }
+
+    .gto{
+        height: 250px;
+    }
+
+    .redes{
+        margin-left: 30%;
+      margin-right: 30%;
+    }
+}
+
+@media(max-width:1145px){
+
+    .alinear{
+       margin-left: 1%;
+        width: 300px;
+
+    }
+}
+@media(max-width:850px){
+
+    .col-a5{
+       display: block;
+
+    }
+}
+
+@media(min-width:760px){
+
+    .col-a5{
+
+        display: none;
+    }
+}
+@media(min-width:1200px){
+
+    .col-a5{
+
+        display: block;
+    }
+}
+
+
+@media(max-width:500px){
+    .alinear{
+        display: none;
+
+    }
+    .espacio{
+        margin-top: 5%;
+    }
+}
+
+
+.tamano-carusel{
+	width: 70%;
+}
+.info-Escuela{
+
+	height: 100%;
+}
+
+.tamano-img{
+	height: 70px;
+	width: 80px;
+}
+
+
+.items{
+	overflow-x: scroll;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	padding: 50px 0px;
+
+}
+
+.topo{
+	margin-top: 85px;
+	font-size: 70px;
+}
+.e:hover{
+
+	transform: scale(1.2);
+
+}

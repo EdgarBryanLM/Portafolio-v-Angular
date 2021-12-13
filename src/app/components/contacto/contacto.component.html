@@ -1,0 +1,52 @@
+<div id="contacto" class="card-body menu-contacto">
+
+        <div class="card-body contacto ">
+           <div class="center-t">
+            <h2 class="h2">Contacto</h2>
+            </div>
+            <form (ngSubmit)="guardar()"  autocomplete="off" [formGroup]="miFormulario" class="contenido-form">
+               <label for="formGroupExampleInput" class="form-label">Name</label>
+                <input type="text" class="form-control" placeholder="Name"
+                 aria-label="Nombre" formControlName="nombre">
+                 <span *ngIf="CampoInvalido('nombre')"
+                 class="form-text text-danger">Must be 6 characters</span> <br>
+
+
+                <label for="formGroupExampleInput" class="form-label">Email</label>
+                <input type="text" class="form-control" placeholder="Email"
+                 aria-label="Correo" formControlName="email">
+                <span *ngIf="CampoInvalido('nombre')"
+			 class="form-text text-danger">Must be 6 characters</span> <br>
+
+                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1"
+   rows="3" formControlName="mensaje" placeholder="Messege"></textarea>
+  <span *ngIf="CampoInvalido('nombre')"
+			 class="form-text text-danger">Must be 20 characters</span> <br>
+               <div class="col text-center">
+                   <app-captcha class="" (enviar)="recibirRespuesta($event)"></app-captcha>
+
+
+                 <p-confirmDialog [style]="{width: '50vw'}" [baseZIndex]="10000"></p-confirmDialog>
+                 <p-button type="submit" class="mt-3"
+                 [disabled]="(miFormulario.invalid || verdadero)? true:false" (click)="confirm1()" icon="pi pi-check" label="Send"></p-button>
+                </div>
+
+            </form>
+
+            <div class=" text-center">
+            <h4 class="h4 text-center">Social Networks</h4>
+            <div class="d-flex redes">
+            <a class="text-center red" href="https://www.facebook.com/edgarbrian.lopezmora/"><i class="icon-facebook-circled redes"></i></a>
+            <a class="text-center red" href="https://www.instagram.com/edgarbryanssj/?hl=es-la"><i class="icon-instagram-filled redes"></i></a>
+            <a class="text-center red" href="https://github.com/EdgarBryanLM"><i class="icon-github-circled redes "></i></a>
+            </div>
+            </div>
+            <h5 class="h5 text-center ct">+52 1 445 152 1859</h5>
+            <h5 class="h5 center-t ct">edgar360456@gmail.com</h5>
+        </div>
+
+
+
+
+    </div>

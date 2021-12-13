@@ -1,0 +1,65 @@
+<!-- Pagina -->
+<app-menu-bar></app-menu-bar>
+<div class="card-body menu menu-estilos">
+  <div class="bloque d-flex">
+  <div class="d-block TEXTO  animate__animated  animate__backInLeft">
+  <h1 class="h1 tblanco">Developer</h1>
+  <h3 class="h3 tblanco">Front-End and Back-End</h3>
+  </div>
+
+ <img src="../assets/img/computadora2.png" class="alinear animate__animated animate__pulse animate__slow animate__infinite  " alt="...">
+  </div>
+
+  <div class=" menu espacio animate__animated  animate__backInDown">
+  <div class="card-body men2">
+
+
+  <div class="card-body men3 ">
+   <div class="color1">
+    <h1 class="h1 color">HELLO WORD!!</h1>
+    </div>
+    <div class="color2">
+    <h2 class="h2">My name is Edgar Bryan López Mora</h2>
+      </div>
+     <p>Nice to meet you, I am currently 22 years old, I am from Moroleon Guanajuato Mexico, I really like sports such as playing soccer, running or cycling. I really like teamwork since I like to learn from the people around me.</p>
+      </div>
+
+  </div>
+  </div>
+
+<div class="d-flex">
+<h1 class="topo" (click)="atras()"><</h1>
+
+
+    <div id="items" class="d-flex mt-4 items">
+
+      <div class="  d-block mx-5 animate__animated animate__pulse animate__slow animate__infinite"
+       *ngFor="let len of skills"  (mouseover)="stop()" (mouseout)="start(numero)"  >
+	<img src="../assets/img/{{len.imagen}}.png" alt="" class="tamano-img mx-auto d-block e">
+	<h4 class="h4 text-center ">{{len.lenguaje}}</h4>
+      </div>
+
+
+    </div>
+    <h1 class="topo" (click)="avance()">></h1>
+  </div>
+  </div>
+
+  <div class="card-body Menu-escuela ">
+
+      <app-school></app-school>
+
+    <div class="card-body menu4 skills">
+
+	<app-skills></app-skills>
+
+    <app-proyectos-carrusel></app-proyectos-carrusel>
+
+
+    </div>
+  </div>
+
+  <app-contacto id="contacto"></app-contacto>
+
+ <!-- Footer -->
+<app-footer></app-footer>

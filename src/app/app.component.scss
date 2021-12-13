@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+
+*{
+    font-family: 'Orelega One', cursive;
+}
+.body{
+    background-color: #00b4d8;
+}
+.menu{
+background-color: #00b4d8;
+}
+.menu4{
+
+    border-radius: 20px;
+    margin-bottom: 3%;
+
+}
+.navbar{
+    background-color: #00b4d8;
+}
+.menu5{
+background-color: #00b4d8;
+    margin-top: 5%;
+    border-radius: 20px;
+}
+
+.nar{
+    background-color: #00296b;
+    color: white;
+    text-decoration-color: white;
+}
+.menu-estilos{
+
+}
+
+.alinear{
+  margin-left: 20%;
+
+}
+.TEXTO{
+    margin-top: 10%;
+    margin-left: 10%;
+}
+.estilos-boton{
+    margin-top: 5%;
+}
+
+.tblanco{
+    color: white;
+}
+.cartas{
+    height: 600px
+}
+.men2{
+background-color: #003049;
+border-radius: 20px;
+padding-left: 60px
+}
+
+.espacio{
+    margin-left: 10%
+}
+
+.men3{
+background-color: #FFF;
+ border-top-left-radius: 60px;
+}
+
+.Menu-escuela{
+    background-color: #003049;
+}
+
+.skills{
+
+margin-top: 25px;
+}
+.color1{
+   color: #003049;
+}
+.color2{
+   color: #00b4d8;
+}
+.skillsc{
+    color: white;
+    text-align: center
+}
+
+.skills-t{
+
+margin-top: 4%;
+    margin-left: 3%;
+    color: #01497c;
+
+}
+
+
+.educacion{
+    color: white;
+    text-align: center;
+}
+
+.skills-c{
+    color: #012a4a;
+    ;
+}
+
+
+.menu-contacto{
+     background-image: url("../assets/img/gif-codigo.gif");
+}
+
+.contacto{
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+}
+fondo-c{
+
+}
+.center-t{
+    text-align: center;
+    color: white;
+}
+.letras{
+    color: white;
+}
+.btn-form{
+    margin-top: 5%;
+
+}
+
+.redes{
+    margin-left: 41%;
+      margin-right: 41%;
+}
+.ct{
+    color: white;
+}
+
+boton:hover{
+    color: red;
+}
+
+.footer-c{
+    color: white;
+    background-color: #012a4a;
+
+}
+
+.colo-tec{
+    color: #90be6d;
+}
+
+.tamano{
+    height:400px;
+}
+.grupo{
+    margin-bottom: 5%;
+}
+.lateral{
+    margin-top: 10%;
+}
+@media(max-width:500px){
+
+    .tamano{
+        height:200px;
+    }
+
+    .gto{
+        height: 250px;
+    }
+
+    .redes{
+        margin-left: 30%;
+      margin-right: 30%;
+    }
+}
+
+@media(max-width:1145px){
+
+    .alinear{
+       margin-left: 1%;
+        width: 300px;
+
+    }
+}
+@media(max-width:850px){
+
+    .col-a5{
+       display: block;
+
+    }
+}
+
+@media(min-width:760px){
+
+    .col-a5{
+
+        display: none;
+    }
+}
+@media(min-width:1200px){
+
+    .col-a5{
+
+        display: block;
+    }
+}
+
+
+@media(max-width:500px){
+    .alinear{
+        display: none;
+
+    }
+    .espacio{
+        margin-top: 5%;
+    }
+}
+
+
+.tamano-carusel{
+	width: 70%;
+}
+.info-Escuela{
+
+	height: 100%;
+}
+
+.tamano-img{
+	height: 70px;
+	width: 80px;
+}
+
+
+.items{
+	overflow-x: scroll;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	padding: 50px 0px;
+
+}
+
+.topo{
+	margin-top: 85px;
+	font-size: 70px;
+}
+.e:hover{
+
+	transform: scale(1.2);
+
+}
+
+@font-face {
+	font-family: 'fontello';
+	src: url('../font/fontello.eot?60816877');
+	src: url('../font/fontello.eot?60816877#iefix') format('embedded-opentype'),
+	     url('../font/fontello.woff2?60816877') format('woff2'),
+	     url('../font/fontello.woff?60816877') format('woff'),
+	     url('../font/fontello.ttf?60816877') format('truetype'),
+	     url('../font/fontello.svg?60816877#fontello') format('svg');
+	font-weight: normal;
+	font-style: normal;
+      }
+      /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+      /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+      /*
+      @media screen and (-webkit-min-device-pixel-ratio:0) {
+	@font-face {
+	  font-family: 'fontello';
+	  src: url('../font/fontello.svg?60816877#fontello') format('svg');
+	}
+      }
+      */
+
+       [class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: "fontello";
+	font-style: normal;
+	font-weight: normal;
+	speak: never;
+
+	display: inline-block;
+	text-decoration: inherit;
+	width: 1em;
+	margin-right: .2em;
+	text-align: center;
+	/* opacity: .8; */
+
+	/* For safety - reset parent styles, that can break glyph codes*/
+	font-variant: normal;
+	text-transform: none;
+
+	/* fix buttons height, for twitter bootstrap */
+	line-height: 1em;
+
+	/* Animation center compensation - margins should be symmetric */
+	/* remove if not needed */
+	margin-left: .2em;
+
+	/* you can be more comfortable with increased icons size */
+	/* font-size: 120%; */
+
+	/* Font smoothing. That was taken from TWBS */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	/* Uncomment for 3D effect */
+	/* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+      }
+
+      .icon-location-circled:before { content: '\e800'; } /* '' */
+      .icon-calendar-circled:before { content: '\e801'; } /* '' */
+      .icon-github-circled:before { content: '\e802'; } /* '' */
+      .icon-laptop:before { content: '\e803'; } /* '' */
+      .icon-facebook-circled:before { content: '\f051'; } /* '' */
+      .icon-ok-circled:before { content: '\f06d'; } /* '' */
+      .icon-code:before { content: '\f121'; } /* '' */
+      .icon-database:before { content: '\f1c0'; } /* '' */
+      .icon-instagram-filled:before { content: '\f31f'; } /* '' */

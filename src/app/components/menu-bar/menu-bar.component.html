@@ -1,0 +1,44 @@
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark nar nar ">
+	<div class="container-fluid">
+		<button pButton  class=" p-button-text botonM " type="button" (click)="visibleSidebar1 = true" icon="pi pi-align-justify"></button>
+
+	 <img src="">
+	  <a class="navbar-brand" href="index.html">My perfil</a>
+
+
+	  <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+	    <div class="navbar-nav d-flex ">
+	      <a class="nav-link" aria-current="page" routerLink="/proyectos">Professional projects</a>
+	      <a class="nav-link" routerLink="/proyectos-sociales">Social projects</a>
+
+	    </div>
+	  </div>
+	</div>
+      </nav>
+
+
+      <p-sidebar [(visible)]="visibleSidebar1" [baseZIndex]="10000">
+	<h1 routerLink="/" style="font-weight:normal">HOME</h1>
+
+	<hr>
+	<button pButton type="button bl" routerLink="/proyectos" label="Professional projects" (click)="visibleSidebar1 = false" class="p-button-text"></button>
+	<button pButton type="button bl" routerLink="/proyectos-sociales" label="Social projects" (click)="visibleSidebar1 = false" class="p-button-text"></button>
+	<footer class="foo">
+<hr class="bl">
+		<h4 class="h4 text-center">
+			CONTACT LINKS
+		</h4>
+		<div class="d-flex redes">
+			<a class="text-center red" href="https://www.facebook.com/edgarbrian.lopezmora/"><i class="icon-facebook-circled redes"></i></a>
+			<a class="text-center red" href="https://www.instagram.com/edgarbryanssj/?hl=es-la"><i class="icon-instagram-filled redes"></i></a>
+			<a class="text-center red" href="https://github.com/EdgarBryanLM"><i class="icon-github-circled redes "></i></a>
+			</div>
+		<h4 class="h4 text-center">
+			© 2021 Copyright
+		</h4>
+	</footer>
+
+    </p-sidebar>
+
+
+

@@ -1,10 +1,143 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+interface habilidades{
+  lenguaje: string,
+  imagen: string
+}
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'portafolio-cv';
+export class AppComponent implements OnInit{
+
+     /* Habilidades: habilidades[]; */
+      intervalo:any;
+      numero=1;
+      skills: habilidades[] =[
+        {
+          lenguaje: 'TypeScript',
+          imagen: 'TypeScript'
+        },
+        {
+          lenguaje: 'JavaScript',
+          imagen: 'JavaScript'
+        },
+        {
+          lenguaje: 'Angular',
+          imagen: 'Angular'
+        },
+        {
+          lenguaje: 'Ionic',
+          imagen: 'Ionic'
+        },
+        {
+          lenguaje: 'PHP',
+          imagen: 'PHP'
+        },
+        {
+          lenguaje: 'C#',
+          imagen: 'C'
+        },
+        {
+          lenguaje: 'Java',
+          imagen: 'Java'
+        },
+        {
+          lenguaje: 'Bootstrap',
+          imagen: 'Bootstrap'
+        },
+        {
+          lenguaje: 'HTML5',
+          imagen: 'HTML5'
+        },
+        {
+          lenguaje: 'CSS',
+          imagen: 'CSS'
+        },
+
+
+
+      ];
+
+
+
+    constructor(){
+
+    }
+
+
+   async ngOnInit(){
+
+
+    this.start(this.numero);
+
+
+   }
+
+   async stop(){
+  /*   carrusel.addEventListener('mouseover', () => {
+      console.log('hola');
+
+
+    }); */
+
+    clearInterval(this.intervalo);
+   /*  carrusel.addEventListener('mouseout', () => {
+     this.start();
+    }); */
+   }
+
+
+   async start( avance:number){
+
+
+
+    let step=1;
+    const carrusel = await <HTMLElement>document.querySelector('.items');
+    let maxScrollLert=carrusel.scrollWidth - carrusel.clientWidth;
+
+
+     carrusel.scrollLeft= carrusel.scrollLeft+ step+avance;
+
+
+
+     this.intervalo=setInterval(  function  (){
+
+
+              carrusel.scrollLeft= carrusel.scrollLeft+ step;
+              console.log(carrusel.scrollLeft);
+
+              if(carrusel.scrollLeft === maxScrollLert){
+                  step=step *-1;
+
+
+              } else if (carrusel.scrollLeft ===0){
+                step=step *-1;
+
+
+              }
+            },10);
+            console.log(carrusel.scrollLeft);
+
+
+
+   }
+
+   avance(){
+     this.stop();
+     this.start(802);
+   }
+
+   atras(){
+    this.stop();
+    this.start(-802);
+  }
+    /* this.Habilidades=[
+      {
+        lenguaje: 'java',
+        imagen: 'sdf'
+      }
+    ]; */
 }
