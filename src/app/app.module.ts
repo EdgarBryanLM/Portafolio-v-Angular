@@ -12,6 +12,7 @@ import {ToastModule} from 'primeng/toast';
 import {RippleModule} from 'primeng/ripple';
 import { MessagesModule } from 'primeng/messages';
 import { ConfirmDialogModule } from 'primeng/confirmdialog';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,8 @@ import { ConfirmDialogModule } from 'primeng/confirmdialog';
     AppRoutingModule,
     ComponentsModule,
     BrowserAnimationsModule,
+
+   // AngularFireModule.initializeApp(environment.firebase)
 
   ],
   providers: [],
