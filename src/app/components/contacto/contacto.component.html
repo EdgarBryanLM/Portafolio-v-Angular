@@ -15,13 +15,13 @@
                 <label for="formGroupExampleInput" class="form-label">Email</label>
                 <input type="text" class="form-control" placeholder="Email"
                  aria-label="Correo" formControlName="email">
-                <span *ngIf="CampoInvalido('nombre')"
+                <span *ngIf="CampoInvalido('email')"
 			 class="form-text text-danger">Must be 6 characters</span> <br>
 
                 <label for="exampleFormControlTextarea1" class="form-label">Message</label>
   <textarea class="form-control" id="exampleFormControlTextarea1"
    rows="3" formControlName="mensaje" placeholder="Messege"></textarea>
-  <span *ngIf="CampoInvalido('nombre')"
+  <span *ngIf="CampoInvalido('mensaje')"
 			 class="form-text text-danger">Must be 20 characters</span> <br>
                <div class="col text-center">
                    <app-captcha class="" (enviar)="recibirRespuesta($event)"></app-captcha>
